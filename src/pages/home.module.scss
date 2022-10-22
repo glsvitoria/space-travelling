@@ -1,0 +1,54 @@
+.posts {
+   button {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--highlight);
+      margin-top: 4rem;
+      background: none;
+      border: none;
+
+      transition: filter .2s;
+
+      &:hover {
+         filter: brightness(.8);
+      }
+   }
+}
+
+.postItem {
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+
+   & + & {
+      margin-top: 3rem;
+   }
+
+   h1 {
+      font-size: 1.75rem;
+      font-weight: bold;
+   }
+
+   p {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+      color: var(--body);
+   }
+
+   ul {
+      display: flex;
+      gap: 1.625rem;
+      list-style-type: none;
+
+      li {
+         display: flex;
+         align-items: center;
+         font-size: 0.875rem;
+         color: var(--info);
+
+         svg {
+            margin-right: 0.5rem;
+         }
+      }
+   }
+}
